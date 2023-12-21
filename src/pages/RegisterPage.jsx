@@ -2,22 +2,25 @@ import { useForm } from "react-hook-form";
 import { useAuth } from "../context/AuthContext.jsx";
 
 function RegisterPage() {
+
   const {
     register,
     handleSubmit,
     getValues,
     formState: { errors },
   } = useForm();
-  const { signUp, user } = useAuth();
-  console.log(user);
+
+  const { register : registerTeacher, error : registerError } = useAuth();
+
   const onSubmit = handleSubmit(async (values) => {
     console.log("errors", errors);
-    signUp(values);
+    registerTeacher(values);
   });
 
   return (
     <div className="flex items-center justify-center py-8">
-      <div className="bg-zinc-800 max-w-md p-5 rounded-md">
+      <div className="bg-zinc-800 max-w-md w-full p-5 rounded-md">
+        {registerError && (<p className="bg-red-600 text-white rounded-md p-2 text-center">{registerError}</p>)}
         <h1 className="my-2 font-bold">Registro de profesor</h1>
         <form onSubmit={onSubmit}>
           <label className="block font-bold mt-2">Nombre</label>

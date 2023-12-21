@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      dropShadow: {
+        'xl': [
+            '0 4px 4px rgba(218, 196, 196, 0.25)'
+        ]
+      }
+    },
   },
   plugins: [],
 }

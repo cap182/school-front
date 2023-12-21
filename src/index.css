@@ -3,7 +3,37 @@
 @tailwind utilities;
 
 body{
-    background: #202020 ;
+    background: #27272a ;
     color: beige;
     place-content: center;
+}
+
+.effect {
+    background: linear-gradient(145deg, #232326, #2a2a2d);
+    box-shadow:  18px 18px 42px #101011,
+             -18px -18px 42px #3e3e43;
+}
+
+.input-effect {
+    background: #27272a;
+    box-shadow: inset 9px 9px 12px #1b1b1d,
+                inset -9px -9px 12px #333337;
+}
+
+.input-span {
+background: linear-gradient(145deg, #2a2a2d, #232326);
+box-shadow:  10px 10px 22px #212123,
+             -10px -10px 22px #1d1d20;
+}
+
+.button-effect {
+background: linear-gradient(145deg, #853efe, #7034d5);
+box-shadow:  14px 14px 28px #7336dc,
+             -14px -14px 28px #853efe;
+}
+
+.courses-button{
+    background: #27272a;
+    box-shadow:  24px 24px 47px #212123,
+                 -24px -24px 47px #2d2d31;
 }
