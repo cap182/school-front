@@ -32,7 +32,7 @@ function LoginPage() {
             type="email"
             placeholder="Email"
             {...register("email", { required: true })}
-            className="w-full input-effect text-white px-4 my-1 py-2 rounded-md"
+            className="w-full bg-zinc-300 text-zinc-900 px-4 my-1 py-2 rounded-md"
           />   
           {errors.email && <p className="text-red-700 block font-bold mt-2">Email es requerido</p>}
           <label className="block font-bold mt-2">Contraseña</label>
@@ -40,7 +40,7 @@ function LoginPage() {
             type="password"
             placeholder="Contraseña"
             {...register("pssw", { required: true })}
-            className="w-full input-effect text-white px-4 my-1 py-2 rounded-md"
+            className="w-full bg-zinc-300 text-zinc-900 px-4 my-1 py-2 rounded-md"
           />
           {errors.pssw && <p className="text-red-700 block font-bold mt-2">Contraseña es requerida</p>}
           <button

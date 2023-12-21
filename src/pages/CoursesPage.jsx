@@ -22,7 +22,8 @@ export const CoursesPage = () => {
     <div className="grid grid-cols-2 gap-4">
 
       <div className="items-center justify-center p-8 ">{listCourses}</div>
-      <div className="items-center justify-center p-8 "><Percentages courseId={selecterdCourse}></Percentages></div>
+      <div className="items-center justify-center p-8 "><Percentages courseId={selecterdCourse}></Percentages>
+      </div>
     </div>
     </>
   );

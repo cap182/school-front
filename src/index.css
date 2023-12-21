@@ -9,9 +9,9 @@ body{
 }
 
 .effect {
-    background: linear-gradient(145deg, #232326, #2a2a2d);
-    box-shadow:  18px 18px 42px #101011,
-             -18px -18px 42px #3e3e43;
+background: #27272a;
+box-shadow:  7px 7px 24px #19191b,
+             -7px -7px 24px #353539;
 }
 
 .input-effect {
@@ -37,3 +37,10 @@ box-shadow:  14px 14px 28px #7336dc,
     box-shadow:  24px 24px 47px #212123,
                  -24px -24px 47px #2d2d31;
 }
+
+g path {
+    stroke-width: 0 !important;
+}
+
+
+  
